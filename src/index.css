@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    background-color: #0d0f11;
+    color: #e2e8f0;
+  }
+  body {
+    background-color: #0d0f11;
+    color: #e2e8f0;
+    overflow-x: hidden;
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
+
+/* Subtle moving canvas background */
+.hero-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
